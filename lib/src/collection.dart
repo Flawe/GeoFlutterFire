@@ -77,7 +77,7 @@ class GeoFireCollectionRef {
       return colRef.doc(id).set(
         {'$field': point},
         SetOptions(
-          merge: merge
+          merge: true
         )
       );
     } catch (e) {
